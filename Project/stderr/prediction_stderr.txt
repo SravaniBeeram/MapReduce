@@ -1,0 +1,600 @@
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/mnt/yarn/usercache/hadoop/filecache/10/__spark_libs__8301212864078879625.zip/slf4j-log4j12-1.7.16.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/lib/hadoop/lib/slf4j-log4j12-1.7.10.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+17/04/23 21:21:10 INFO SignalUtils: Registered signal handler for TERM
+17/04/23 21:21:10 INFO SignalUtils: Registered signal handler for HUP
+17/04/23 21:21:10 INFO SignalUtils: Registered signal handler for INT
+17/04/23 21:21:11 INFO ApplicationMaster: Preparing Local resources
+17/04/23 21:21:13 INFO ApplicationMaster: Prepared Local resources Map(__app__.jar -> resource { scheme: "hdfs" host: "ip-172-31-36-53.us-west-2.compute.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1492982292298_0001/project-1.0-SNAPSHOT.jar" } size: 20586 timestamp: 1492982466270 type: FILE visibility: PRIVATE, __spark_libs__ -> resource { scheme: "hdfs" host: "ip-172-31-36-53.us-west-2.compute.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1492982292298_0001/__spark_libs__8301212864078879625.zip" } size: 192733331 timestamp: 1492982463286 type: ARCHIVE visibility: PRIVATE, __spark_conf__ -> resource { scheme: "hdfs" host: "ip-172-31-36-53.us-west-2.compute.internal" port: 8020 file: "/user/hadoop/.sparkStaging/application_1492982292298_0001/__spark_conf__.zip" } size: 73317 timestamp: 1492982466565 type: ARCHIVE visibility: PRIVATE)
+17/04/23 21:21:13 INFO ApplicationMaster: ApplicationAttemptId: appattempt_1492982292298_0001_000001
+17/04/23 21:21:13 INFO SecurityManager: Changing view acls to: yarn,hadoop
+17/04/23 21:21:13 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+17/04/23 21:21:13 INFO SecurityManager: Changing view acls groups to: 
+17/04/23 21:21:13 INFO SecurityManager: Changing modify acls groups to: 
+17/04/23 21:21:13 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+17/04/23 21:21:13 INFO ApplicationMaster: Starting the user application in a separate Thread
+17/04/23 21:21:13 INFO ApplicationMaster: Waiting for spark context initialization
+17/04/23 21:21:13 INFO ApplicationMaster: Waiting for spark context initialization ... 
+17/04/23 21:21:13 INFO SparkContext: Running Spark version 2.0.2
+17/04/23 21:21:13 INFO SecurityManager: Changing view acls to: yarn,hadoop
+17/04/23 21:21:13 INFO SecurityManager: Changing modify acls to: yarn,hadoop
+17/04/23 21:21:13 INFO SecurityManager: Changing view acls groups to: 
+17/04/23 21:21:13 INFO SecurityManager: Changing modify acls groups to: 
+17/04/23 21:21:13 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(yarn, hadoop); groups with view permissions: Set(); users  with modify permissions: Set(yarn, hadoop); groups with modify permissions: Set()
+17/04/23 21:21:13 INFO Utils: Successfully started service 'sparkDriver' on port 40055.
+17/04/23 21:21:13 INFO SparkEnv: Registering MapOutputTracker
+17/04/23 21:21:13 INFO SparkEnv: Registering BlockManagerMaster
+17/04/23 21:21:13 INFO DiskBlockManager: Created local directory at /mnt/yarn/usercache/hadoop/appcache/application_1492982292298_0001/blockmgr-452d5f0a-ffa2-48ba-86bb-dde3d8b7fb69
+17/04/23 21:21:13 INFO MemoryStore: MemoryStore started with capacity 424.4 MB
+17/04/23 21:21:13 INFO SparkEnv: Registering OutputCommitCoordinator
+17/04/23 21:21:13 INFO JettyUtils: Adding filter: org.apache.hadoop.yarn.server.webproxy.amfilter.AmIpFilter
+17/04/23 21:21:14 INFO Utils: Successfully started service 'SparkUI' on port 37106.
+17/04/23 21:21:14 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://172.31.33.149:37106
+17/04/23 21:21:14 INFO YarnClusterScheduler: Created YarnClusterScheduler
+17/04/23 21:21:14 INFO SchedulerExtensionServices: Starting Yarn extension services with app application_1492982292298_0001 and attemptId Some(appattempt_1492982292298_0001_000001)
+17/04/23 21:21:14 INFO Utils: Using initial executors = 0, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+17/04/23 21:21:14 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 40008.
+17/04/23 21:21:14 INFO NettyBlockTransferService: Server created on 172.31.33.149:40008
+17/04/23 21:21:14 INFO BlockManager: external shuffle service port = 7337
+17/04/23 21:21:14 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, 172.31.33.149, 40008)
+17/04/23 21:21:14 INFO BlockManagerMasterEndpoint: Registering block manager 172.31.33.149:40008 with 424.4 MB RAM, BlockManagerId(driver, 172.31.33.149, 40008)
+17/04/23 21:21:14 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, 172.31.33.149, 40008)
+17/04/23 21:21:14 INFO EventLoggingListener: Logging events to hdfs:///var/log/spark/apps/application_1492982292298_0001_1
+17/04/23 21:21:14 INFO Utils: Using initial executors = 0, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+17/04/23 21:21:14 WARN YarnSchedulerBackend$YarnSchedulerEndpoint: Attempted to request executors before the AM has registered!
+17/04/23 21:21:14 INFO YarnClusterSchedulerBackend: SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.8
+17/04/23 21:21:14 INFO YarnClusterScheduler: YarnClusterScheduler.postStartHook done
+17/04/23 21:21:14 INFO YarnSchedulerBackend$YarnSchedulerEndpoint: ApplicationMaster registered as NettyRpcEndpointRef(spark://YarnAM@172.31.33.149:40055)
+17/04/23 21:21:14 INFO RMProxy: Connecting to ResourceManager at ip-172-31-36-53.us-west-2.compute.internal/172.31.36.53:8030
+17/04/23 21:21:15 INFO YarnRMClient: Registering the ApplicationMaster
+17/04/23 21:21:15 INFO Utils: Using initial executors = 0, max of spark.dynamicAllocation.initialExecutors, spark.dynamicAllocation.minExecutors and spark.executor.instances
+17/04/23 21:21:15 INFO ApplicationMaster: Started progress reporter thread with (heartbeat : 3000, initial allocation : 200) intervals
+17/04/23 21:21:15 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 299.4 KB, free 424.1 MB)
+17/04/23 21:21:15 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 26.0 KB, free 424.1 MB)
+17/04/23 21:21:15 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on 172.31.33.149:40008 (size: 26.0 KB, free: 424.4 MB)
+17/04/23 21:21:15 INFO SparkContext: Created broadcast 0 from textFile at modelSaveLoad.scala:129
+17/04/23 21:21:15 INFO GPLNativeCodeLoader: Loaded native gpl library
+17/04/23 21:21:15 INFO LzoCodec: Successfully loaded & initialized native-lzo library [hadoop-lzo rev f7cb0596948c5bfd3e71d37b0f5bb21a19554666]
+17/04/23 21:21:17 INFO FileInputFormat: Total input paths to process : 1
+17/04/23 21:21:17 INFO SparkContext: Starting job: first at modelSaveLoad.scala:129
+17/04/23 21:21:17 INFO DAGScheduler: Got job 0 (first at modelSaveLoad.scala:129) with 1 output partitions
+17/04/23 21:21:17 INFO DAGScheduler: Final stage: ResultStage 0 (first at modelSaveLoad.scala:129)
+17/04/23 21:21:17 INFO DAGScheduler: Parents of final stage: List()
+17/04/23 21:21:17 INFO DAGScheduler: Missing parents: List()
+17/04/23 21:21:17 INFO DAGScheduler: Submitting ResultStage 0 (s3://cs6240biya/model/metadata MapPartitionsRDD[1] at textFile at modelSaveLoad.scala:129), which has no missing parents
+17/04/23 21:21:17 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 3.0 KB, free 424.1 MB)
+17/04/23 21:21:17 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 1878.0 B, free 424.1 MB)
+17/04/23 21:21:17 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on 172.31.33.149:40008 (size: 1878.0 B, free: 424.4 MB)
+17/04/23 21:21:17 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1012
+17/04/23 21:21:17 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 0 (s3://cs6240biya/model/metadata MapPartitionsRDD[1] at textFile at modelSaveLoad.scala:129)
+17/04/23 21:21:17 INFO YarnClusterScheduler: Adding task set 0.0 with 1 tasks
+17/04/23 21:21:19 INFO YarnAllocator: Driver requested a total number of 1 executor(s).
+17/04/23 21:21:19 INFO ExecutorAllocationManager: Requesting 1 new executor because tasks are backlogged (new desired total will be 1)
+17/04/23 21:21:19 INFO YarnAllocator: Will request 1 executor containers, each with 4 cores and 5068 MB memory including 460 MB overhead
+17/04/23 21:21:19 INFO YarnAllocator: Canceled 0 container requests (locality no longer needed)
+17/04/23 21:21:19 INFO YarnAllocator: Submitted container request (host: *, capability: <memory:5068, vCores:4>)
+17/04/23 21:21:19 INFO AMRMClientImpl: Received new token for : ip-172-31-32-217.us-west-2.compute.internal:8041
+17/04/23 21:21:19 INFO AMRMClientImpl: Received new token for : ip-172-31-38-226.us-west-2.compute.internal:8041
+17/04/23 21:21:19 INFO YarnAllocator: Launching container container_1492982292298_0001_01_000002 for on host ip-172-31-32-217.us-west-2.compute.internal
+17/04/23 21:21:19 INFO YarnAllocator: Launching ExecutorRunnable. driverUrl: spark://CoarseGrainedScheduler@172.31.33.149:40055,  executorHostname: ip-172-31-32-217.us-west-2.compute.internal
+17/04/23 21:21:19 INFO YarnAllocator: Received 2 containers from YARN, launching executors on 1 of them.
+17/04/23 21:21:19 INFO ExecutorRunnable: Starting Executor Container
+17/04/23 21:21:19 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+17/04/23 21:21:19 INFO ExecutorRunnable: Setting up ContainerLaunchContext
+17/04/23 21:21:19 INFO ExecutorRunnable: 
+===============================================================================
+YARN executor launch context:
+  env:
+    CLASSPATH -> /usr/lib/hadoop-lzo/lib/*:/usr/lib/hadoop/hadoop-aws.jar:/usr/share/aws/aws-java-sdk/*:/usr/share/aws/emr/emrfs/conf:/usr/share/aws/emr/emrfs/lib/*:/usr/share/aws/emr/emrfs/auxlib/*:/usr/share/aws/emr/security/conf:/usr/share/aws/emr/security/lib/*<CPS>{{PWD}}<CPS>{{PWD}}/__spark_conf__<CPS>{{PWD}}/__spark_libs__/*<CPS>$HADOOP_CONF_DIR<CPS>$HADOOP_COMMON_HOME/*<CPS>$HADOOP_COMMON_HOME/lib/*<CPS>$HADOOP_HDFS_HOME/*<CPS>$HADOOP_HDFS_HOME/lib/*<CPS>$HADOOP_MAPRED_HOME/*<CPS>$HADOOP_MAPRED_HOME/lib/*<CPS>$HADOOP_YARN_HOME/*<CPS>$HADOOP_YARN_HOME/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-api-jdo.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-core.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-rdbms.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*
+    SPARK_LOG_URL_STDERR -> http://ip-172-31-32-217.us-west-2.compute.internal:8042/node/containerlogs/container_1492982292298_0001_01_000002/hadoop/stderr?start=-4096
+    SPARK_YARN_STAGING_DIR -> hdfs://ip-172-31-36-53.us-west-2.compute.internal:8020/user/hadoop/.sparkStaging/application_1492982292298_0001
+    SPARK_USER -> hadoop
+    SPARK_YARN_MODE -> true
+    SPARK_LOG_URL_STDOUT -> http://ip-172-31-32-217.us-west-2.compute.internal:8042/node/containerlogs/container_1492982292298_0001_01_000002/hadoop/stdout?start=-4096
+
+  command:
+    LD_LIBRARY_PATH="/usr/lib/hadoop/lib/native:/usr/lib/hadoop-lzo/lib/native:$LD_LIBRARY_PATH" {{JAVA_HOME}}/bin/java -server -Xmx4608m '-verbose:gc' '-XX:+PrintGCDetails' '-XX:+PrintGCDateStamps' '-XX:+UseConcMarkSweepGC' '-XX:CMSInitiatingOccupancyFraction=70' '-XX:MaxHeapFreeRatio=70' '-XX:+CMSClassUnloadingEnabled' '-XX:OnOutOfMemoryError=kill -9 %p' -Djava.io.tmpdir={{PWD}}/tmp '-Dspark.history.ui.port=18080' '-Dspark.ui.port=0' '-Dspark.driver.port=40055' -Dspark.yarn.app.container.log.dir=<LOG_DIR> org.apache.spark.executor.CoarseGrainedExecutorBackend --driver-url spark://CoarseGrainedScheduler@172.31.33.149:40055 --executor-id 1 --hostname ip-172-31-32-217.us-west-2.compute.internal --cores 4 --app-id application_1492982292298_0001 --user-class-path file:$PWD/__app__.jar 1> <LOG_DIR>/stdout 2> <LOG_DIR>/stderr
+===============================================================================
+      
+17/04/23 21:21:19 INFO ContainerManagementProtocolProxy: Opening proxy : ip-172-31-32-217.us-west-2.compute.internal:8041
+17/04/23 21:21:25 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(null) (172.31.32.217:33160) with ID 1
+17/04/23 21:21:25 INFO ExecutorAllocationManager: New executor 1 has registered (new total is 1)
+17/04/23 21:21:25 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, ip-172-31-32-217.us-west-2.compute.internal, partition 0, RACK_LOCAL, 5406 bytes)
+17/04/23 21:21:25 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-32-217.us-west-2.compute.internal:39257 with 2.5 GB RAM, BlockManagerId(1, ip-172-31-32-217.us-west-2.compute.internal, 39257)
+17/04/23 21:21:25 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 0 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:21:25 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 1878.0 B, free: 2.5 GB)
+17/04/23 21:21:26 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 26.0 KB, free: 2.5 GB)
+17/04/23 21:21:30 INFO DAGScheduler: ResultStage 0 (first at modelSaveLoad.scala:129) finished in 12.673 s
+17/04/23 21:21:30 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 5299 ms on ip-172-31-32-217.us-west-2.compute.internal (1/1)
+17/04/23 21:21:30 INFO YarnClusterScheduler: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+17/04/23 21:21:30 INFO DAGScheduler: Job 0 finished: first at modelSaveLoad.scala:129, took 12.764358 s
+17/04/23 21:21:30 INFO YarnAllocator: Driver requested a total number of 0 executor(s).
+17/04/23 21:21:30 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:21:30 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:21:30 INFO SharedState: Warehouse path is 'hdfs:/user/spark/warehouse'.
+17/04/23 21:21:31 INFO SparkContext: Starting job: parquet at treeEnsembleModels.scala:476
+17/04/23 21:21:31 INFO DAGScheduler: Got job 1 (parquet at treeEnsembleModels.scala:476) with 1 output partitions
+17/04/23 21:21:31 INFO DAGScheduler: Final stage: ResultStage 1 (parquet at treeEnsembleModels.scala:476)
+17/04/23 21:21:31 INFO DAGScheduler: Parents of final stage: List()
+17/04/23 21:21:31 INFO DAGScheduler: Missing parents: List()
+17/04/23 21:21:31 INFO DAGScheduler: Submitting ResultStage 1 (MapPartitionsRDD[3] at parquet at treeEnsembleModels.scala:476), which has no missing parents
+17/04/23 21:21:31 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 78.4 KB, free 424.0 MB)
+17/04/23 21:21:31 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 29.2 KB, free 424.0 MB)
+17/04/23 21:21:31 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on 172.31.33.149:40008 (size: 29.2 KB, free: 424.4 MB)
+17/04/23 21:21:31 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1012
+17/04/23 21:21:31 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[3] at parquet at treeEnsembleModels.scala:476)
+17/04/23 21:21:31 INFO YarnClusterScheduler: Adding task set 1.0 with 1 tasks
+17/04/23 21:21:31 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, ip-172-31-32-217.us-west-2.compute.internal, partition 0, PROCESS_LOCAL, 5592 bytes)
+17/04/23 21:21:31 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 1 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:21:31 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 29.2 KB, free: 2.5 GB)
+17/04/23 21:21:33 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 2320 ms on ip-172-31-32-217.us-west-2.compute.internal (1/1)
+17/04/23 21:21:33 INFO YarnClusterScheduler: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+17/04/23 21:21:33 INFO DAGScheduler: ResultStage 1 (parquet at treeEnsembleModels.scala:476) finished in 2.310 s
+17/04/23 21:21:33 INFO DAGScheduler: Job 1 finished: parquet at treeEnsembleModels.scala:476, took 2.379822 s
+17/04/23 21:21:33 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:21:33 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:21:33 INFO BlockManagerInfo: Removed broadcast_2_piece0 on ip-172-31-32-217.us-west-2.compute.internal:39257 in memory (size: 29.2 KB, free: 2.5 GB)
+17/04/23 21:21:33 INFO BlockManagerInfo: Removed broadcast_2_piece0 on 172.31.33.149:40008 in memory (size: 29.2 KB, free: 424.4 MB)
+17/04/23 21:21:34 INFO BlockManagerInfo: Removed broadcast_0_piece0 on 172.31.33.149:40008 in memory (size: 26.0 KB, free: 424.4 MB)
+17/04/23 21:21:34 INFO BlockManagerInfo: Removed broadcast_0_piece0 on ip-172-31-32-217.us-west-2.compute.internal:39257 in memory (size: 26.0 KB, free: 2.5 GB)
+17/04/23 21:21:34 INFO BlockManagerInfo: Removed broadcast_1_piece0 on 172.31.33.149:40008 in memory (size: 1878.0 B, free: 424.4 MB)
+17/04/23 21:21:34 INFO BlockManagerInfo: Removed broadcast_1_piece0 on ip-172-31-32-217.us-west-2.compute.internal:39257 in memory (size: 1878.0 B, free: 2.5 GB)
+17/04/23 21:21:36 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:21:36 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:21:36 INFO FileSourceStrategy: Pruning directories with: 
+17/04/23 21:21:36 INFO FileSourceStrategy: Post-Scan Filters: 
+17/04/23 21:21:36 INFO FileSourceStrategy: Pruned Data Schema: struct<treeId: int, nodeId: int, predict: struct<predict: double, prob: double>, impurity: double, isLeaf: boolean ... 7 more fields>
+17/04/23 21:21:36 INFO FileSourceStrategy: Pushed Filters: 
+17/04/23 21:21:36 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 317.5 KB, free 424.1 MB)
+17/04/23 21:21:36 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 28.7 KB, free 424.1 MB)
+17/04/23 21:21:36 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on 172.31.33.149:40008 (size: 28.7 KB, free: 424.4 MB)
+17/04/23 21:21:36 INFO SparkContext: Created broadcast 3 from rdd at treeEnsembleModels.scala:477
+17/04/23 21:21:37 INFO FileSourceStrategy: Planning scan with bin packing, max size: 75941601 bytes, open cost is considered as scanning 4194304 bytes.
+17/04/23 21:21:37 INFO CodeGenerator: Code generated in 289.225653 ms
+17/04/23 21:21:37 INFO SparkContext: Starting job: collect at DecisionTreeModel.scala:262
+17/04/23 21:21:37 INFO DAGScheduler: Registering RDD 9 (groupBy at DecisionTreeModel.scala:260)
+17/04/23 21:21:37 INFO DAGScheduler: Got job 2 (collect at DecisionTreeModel.scala:262) with 4 output partitions
+17/04/23 21:21:37 INFO DAGScheduler: Final stage: ResultStage 3 (collect at DecisionTreeModel.scala:262)
+17/04/23 21:21:37 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 2)
+17/04/23 21:21:37 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 2)
+17/04/23 21:21:37 INFO DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[9] at groupBy at DecisionTreeModel.scala:260), which has no missing parents
+17/04/23 21:21:37 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 20.9 KB, free 424.1 MB)
+17/04/23 21:21:37 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 9.2 KB, free 424.1 MB)
+17/04/23 21:21:37 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on 172.31.33.149:40008 (size: 9.2 KB, free: 424.4 MB)
+17/04/23 21:21:37 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1012
+17/04/23 21:21:37 INFO DAGScheduler: Submitting 4 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[9] at groupBy at DecisionTreeModel.scala:260)
+17/04/23 21:21:37 INFO YarnClusterScheduler: Adding task set 2.0 with 4 tasks
+17/04/23 21:21:37 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 2, ip-172-31-32-217.us-west-2.compute.internal, partition 0, RACK_LOCAL, 7712 bytes)
+17/04/23 21:21:37 INFO TaskSetManager: Starting task 1.0 in stage 2.0 (TID 3, ip-172-31-32-217.us-west-2.compute.internal, partition 1, RACK_LOCAL, 8256 bytes)
+17/04/23 21:21:37 INFO TaskSetManager: Starting task 2.0 in stage 2.0 (TID 4, ip-172-31-32-217.us-west-2.compute.internal, partition 2, RACK_LOCAL, 8392 bytes)
+17/04/23 21:21:37 INFO TaskSetManager: Starting task 3.0 in stage 2.0 (TID 5, ip-172-31-32-217.us-west-2.compute.internal, partition 3, RACK_LOCAL, 8120 bytes)
+17/04/23 21:21:37 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 2 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:21:37 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 3 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:21:37 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 4 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:21:37 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 5 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:21:37 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 9.2 KB, free: 2.5 GB)
+17/04/23 21:21:38 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 28.7 KB, free: 2.5 GB)
+17/04/23 21:21:39 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:21:39 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:21:42 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:21:42 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:21:45 INFO TaskSetManager: Finished task 3.0 in stage 2.0 (TID 5) in 8056 ms on ip-172-31-32-217.us-west-2.compute.internal (1/4)
+17/04/23 21:21:45 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:21:45 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:21:47 INFO TaskSetManager: Finished task 2.0 in stage 2.0 (TID 4) in 9661 ms on ip-172-31-32-217.us-west-2.compute.internal (2/4)
+17/04/23 21:21:48 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:21:48 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:21:49 INFO TaskSetManager: Finished task 1.0 in stage 2.0 (TID 3) in 11481 ms on ip-172-31-32-217.us-west-2.compute.internal (3/4)
+17/04/23 21:21:51 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:21:51 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:21:53 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 2) in 15727 ms on ip-172-31-32-217.us-west-2.compute.internal (4/4)
+17/04/23 21:21:53 INFO YarnClusterScheduler: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+17/04/23 21:21:53 INFO DAGScheduler: ShuffleMapStage 2 (groupBy at DecisionTreeModel.scala:260) finished in 15.729 s
+17/04/23 21:21:53 INFO DAGScheduler: looking for newly runnable stages
+17/04/23 21:21:53 INFO DAGScheduler: running: Set()
+17/04/23 21:21:53 INFO DAGScheduler: waiting: Set(ResultStage 3)
+17/04/23 21:21:53 INFO DAGScheduler: failed: Set()
+17/04/23 21:21:53 INFO DAGScheduler: Submitting ResultStage 3 (MapPartitionsRDD[11] at mapValues at DecisionTreeModel.scala:261), which has no missing parents
+17/04/23 21:21:53 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 22.1 KB, free 424.0 MB)
+17/04/23 21:21:53 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 9.7 KB, free 424.0 MB)
+17/04/23 21:21:53 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on 172.31.33.149:40008 (size: 9.7 KB, free: 424.4 MB)
+17/04/23 21:21:53 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1012
+17/04/23 21:21:53 INFO DAGScheduler: Submitting 4 missing tasks from ResultStage 3 (MapPartitionsRDD[11] at mapValues at DecisionTreeModel.scala:261)
+17/04/23 21:21:53 INFO YarnClusterScheduler: Adding task set 3.0 with 4 tasks
+17/04/23 21:21:53 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 6, ip-172-31-32-217.us-west-2.compute.internal, partition 0, NODE_LOCAL, 5170 bytes)
+17/04/23 21:21:53 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 7, ip-172-31-32-217.us-west-2.compute.internal, partition 1, NODE_LOCAL, 5170 bytes)
+17/04/23 21:21:53 INFO TaskSetManager: Starting task 2.0 in stage 3.0 (TID 8, ip-172-31-32-217.us-west-2.compute.internal, partition 2, NODE_LOCAL, 5170 bytes)
+17/04/23 21:21:53 INFO TaskSetManager: Starting task 3.0 in stage 3.0 (TID 9, ip-172-31-32-217.us-west-2.compute.internal, partition 3, NODE_LOCAL, 5170 bytes)
+17/04/23 21:21:53 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 6 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:21:53 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 7 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:21:53 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 8 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:21:53 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 9 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:21:53 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 9.7 KB, free: 2.5 GB)
+17/04/23 21:21:53 INFO MapOutputTrackerMasterEndpoint: Asked to send map output locations for shuffle 0 to 172.31.32.217:33160
+17/04/23 21:21:53 INFO MapOutputTrackerMaster: Size of output statuses for shuffle 0 is 194 bytes
+17/04/23 21:21:54 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:21:54 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:21:57 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:21:57 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:00 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:22:00 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:03 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:22:03 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:03 INFO BlockManagerInfo: Added taskresult_9 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 18.9 MB, free: 2.5 GB)
+17/04/23 21:22:03 INFO TransportClientFactory: Successfully created connection to ip-172-31-32-217.us-west-2.compute.internal/172.31.32.217:39257 after 6 ms (0 ms spent in bootstraps)
+17/04/23 21:22:03 INFO BlockManagerInfo: Removed broadcast_4_piece0 on 172.31.33.149:40008 in memory (size: 9.2 KB, free: 424.4 MB)
+17/04/23 21:22:04 INFO BlockManagerInfo: Removed broadcast_4_piece0 on ip-172-31-32-217.us-west-2.compute.internal:39257 in memory (size: 9.2 KB, free: 2.5 GB)
+17/04/23 21:22:04 INFO BlockManagerInfo: Removed taskresult_9 on ip-172-31-32-217.us-west-2.compute.internal:39257 in memory (size: 18.9 MB, free: 2.5 GB)
+17/04/23 21:22:05 INFO BlockManagerInfo: Added taskresult_7 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 25.1 MB, free: 2.5 GB)
+17/04/23 21:22:05 INFO BlockManagerInfo: Added taskresult_8 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 24.9 MB, free: 2.5 GB)
+17/04/23 21:22:05 INFO BlockManagerInfo: Added taskresult_6 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 24.8 MB, free: 2.4 GB)
+17/04/23 21:22:05 INFO TaskSetManager: Finished task 3.0 in stage 3.0 (TID 9) in 10933 ms on ip-172-31-32-217.us-west-2.compute.internal (1/4)
+17/04/23 21:22:05 INFO BlockManagerInfo: Removed taskresult_6 on ip-172-31-32-217.us-west-2.compute.internal:39257 in memory (size: 24.8 MB, free: 2.5 GB)
+17/04/23 21:22:05 INFO BlockManagerInfo: Removed taskresult_8 on ip-172-31-32-217.us-west-2.compute.internal:39257 in memory (size: 24.9 MB, free: 2.5 GB)
+17/04/23 21:22:06 INFO BlockManagerInfo: Removed taskresult_7 on ip-172-31-32-217.us-west-2.compute.internal:39257 in memory (size: 25.1 MB, free: 2.5 GB)
+17/04/23 21:22:06 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 6) in 12328 ms on ip-172-31-32-217.us-west-2.compute.internal (2/4)
+17/04/23 21:22:06 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:22:06 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:07 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 7) in 13435 ms on ip-172-31-32-217.us-west-2.compute.internal (3/4)
+17/04/23 21:22:08 INFO TaskSetManager: Finished task 2.0 in stage 3.0 (TID 8) in 14375 ms on ip-172-31-32-217.us-west-2.compute.internal (4/4)
+17/04/23 21:22:08 INFO YarnClusterScheduler: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+17/04/23 21:22:08 INFO DAGScheduler: ResultStage 3 (collect at DecisionTreeModel.scala:262) finished in 15.490 s
+17/04/23 21:22:08 INFO DAGScheduler: Job 2 finished: collect at DecisionTreeModel.scala:262, took 31.285759 s
+17/04/23 21:22:09 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:22:09 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:11 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 299.4 KB, free 423.8 MB)
+17/04/23 21:22:11 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 26.0 KB, free 423.7 MB)
+17/04/23 21:22:11 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on 172.31.33.149:40008 (size: 26.0 KB, free: 424.4 MB)
+17/04/23 21:22:11 INFO SparkContext: Created broadcast 6 from textFile at Prediction.scala:44
+17/04/23 21:22:12 INFO ContextCleaner: Cleaned shuffle 0
+17/04/23 21:22:12 INFO BlockManagerInfo: Removed broadcast_5_piece0 on 172.31.33.149:40008 in memory (size: 9.7 KB, free: 424.4 MB)
+17/04/23 21:22:12 INFO BlockManagerInfo: Removed broadcast_5_piece0 on ip-172-31-32-217.us-west-2.compute.internal:39257 in memory (size: 9.7 KB, free: 2.5 GB)
+17/04/23 21:22:12 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:22:12 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:13 INFO BlockManagerInfo: Removed broadcast_3_piece0 on 172.31.33.149:40008 in memory (size: 28.7 KB, free: 424.4 MB)
+17/04/23 21:22:13 INFO BlockManagerInfo: Removed broadcast_3_piece0 on ip-172-31-32-217.us-west-2.compute.internal:39257 in memory (size: 28.7 KB, free: 2.5 GB)
+17/04/23 21:22:13 INFO ContextCleaner: Cleaned accumulator 88
+17/04/23 21:22:13 INFO ContextCleaner: Cleaned accumulator 89
+17/04/23 21:22:15 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:22:15 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:16 INFO FileInputFormat: Total input paths to process : 1
+17/04/23 21:22:18 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:22:18 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:21 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:22:21 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:24 INFO SparkContext: Starting job: collect at Prediction.scala:62
+17/04/23 21:22:24 INFO DAGScheduler: Got job 3 (collect at Prediction.scala:62) with 18 output partitions
+17/04/23 21:22:24 INFO DAGScheduler: Final stage: ResultStage 4 (collect at Prediction.scala:62)
+17/04/23 21:22:24 INFO DAGScheduler: Parents of final stage: List()
+17/04/23 21:22:24 INFO DAGScheduler: Missing parents: List()
+17/04/23 21:22:24 INFO DAGScheduler: Submitting ResultStage 4 (UnionRDD[19] at union at Prediction.scala:62), which has no missing parents
+17/04/23 21:22:24 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:22:24 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:25 INFO YarnAllocator: Driver requested a total number of 2 executor(s).
+17/04/23 21:22:25 INFO YarnAllocator: Will request 1 executor containers, each with 4 cores and 5068 MB memory including 460 MB overhead
+17/04/23 21:22:25 INFO YarnAllocator: Canceled 0 container requests (locality no longer needed)
+17/04/23 21:22:25 INFO YarnAllocator: Submitted container request (host: *, capability: <memory:5068, vCores:4>)
+17/04/23 21:22:25 INFO ExecutorAllocationManager: Requesting 2 new executors because tasks are backlogged (new desired total will be 2)
+17/04/23 21:22:26 INFO AMRMClientImpl: Received new token for : ip-172-31-35-224.us-west-2.compute.internal:8041
+17/04/23 21:22:26 INFO AMRMClientImpl: Received new token for : ip-172-31-38-189.us-west-2.compute.internal:8041
+17/04/23 21:22:26 INFO YarnAllocator: Launching container container_1492982292298_0001_01_000004 for on host ip-172-31-35-224.us-west-2.compute.internal
+17/04/23 21:22:26 INFO YarnAllocator: Launching ExecutorRunnable. driverUrl: spark://CoarseGrainedScheduler@172.31.33.149:40055,  executorHostname: ip-172-31-35-224.us-west-2.compute.internal
+17/04/23 21:22:26 INFO YarnAllocator: Received 2 containers from YARN, launching executors on 1 of them.
+17/04/23 21:22:26 INFO ExecutorRunnable: Starting Executor Container
+17/04/23 21:22:26 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+17/04/23 21:22:26 INFO ExecutorRunnable: Setting up ContainerLaunchContext
+17/04/23 21:22:26 INFO ExecutorRunnable: 
+===============================================================================
+YARN executor launch context:
+  env:
+    CLASSPATH -> /usr/lib/hadoop-lzo/lib/*:/usr/lib/hadoop/hadoop-aws.jar:/usr/share/aws/aws-java-sdk/*:/usr/share/aws/emr/emrfs/conf:/usr/share/aws/emr/emrfs/lib/*:/usr/share/aws/emr/emrfs/auxlib/*:/usr/share/aws/emr/security/conf:/usr/share/aws/emr/security/lib/*<CPS>{{PWD}}<CPS>{{PWD}}/__spark_conf__<CPS>{{PWD}}/__spark_libs__/*<CPS>$HADOOP_CONF_DIR<CPS>$HADOOP_COMMON_HOME/*<CPS>$HADOOP_COMMON_HOME/lib/*<CPS>$HADOOP_HDFS_HOME/*<CPS>$HADOOP_HDFS_HOME/lib/*<CPS>$HADOOP_MAPRED_HOME/*<CPS>$HADOOP_MAPRED_HOME/lib/*<CPS>$HADOOP_YARN_HOME/*<CPS>$HADOOP_YARN_HOME/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-api-jdo.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-core.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-rdbms.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*
+    SPARK_LOG_URL_STDERR -> http://ip-172-31-35-224.us-west-2.compute.internal:8042/node/containerlogs/container_1492982292298_0001_01_000004/hadoop/stderr?start=-4096
+    SPARK_YARN_STAGING_DIR -> hdfs://ip-172-31-36-53.us-west-2.compute.internal:8020/user/hadoop/.sparkStaging/application_1492982292298_0001
+    SPARK_USER -> hadoop
+    SPARK_YARN_MODE -> true
+    SPARK_LOG_URL_STDOUT -> http://ip-172-31-35-224.us-west-2.compute.internal:8042/node/containerlogs/container_1492982292298_0001_01_000004/hadoop/stdout?start=-4096
+
+  command:
+    LD_LIBRARY_PATH="/usr/lib/hadoop/lib/native:/usr/lib/hadoop-lzo/lib/native:$LD_LIBRARY_PATH" {{JAVA_HOME}}/bin/java -server -Xmx4608m '-verbose:gc' '-XX:+PrintGCDetails' '-XX:+PrintGCDateStamps' '-XX:+UseConcMarkSweepGC' '-XX:CMSInitiatingOccupancyFraction=70' '-XX:MaxHeapFreeRatio=70' '-XX:+CMSClassUnloadingEnabled' '-XX:OnOutOfMemoryError=kill -9 %p' -Djava.io.tmpdir={{PWD}}/tmp '-Dspark.history.ui.port=18080' '-Dspark.ui.port=0' '-Dspark.driver.port=40055' -Dspark.yarn.app.container.log.dir=<LOG_DIR> org.apache.spark.executor.CoarseGrainedExecutorBackend --driver-url spark://CoarseGrainedScheduler@172.31.33.149:40055 --executor-id 2 --hostname ip-172-31-35-224.us-west-2.compute.internal --cores 4 --app-id application_1492982292298_0001 --user-class-path file:$PWD/__app__.jar 1> <LOG_DIR>/stdout 2> <LOG_DIR>/stderr
+===============================================================================
+      
+17/04/23 21:22:26 INFO ContainerManagementProtocolProxy: Opening proxy : ip-172-31-35-224.us-west-2.compute.internal:8041
+17/04/23 21:22:26 INFO YarnAllocator: Driver requested a total number of 3 executor(s).
+17/04/23 21:22:26 INFO YarnAllocator: Will request 1 executor containers, each with 4 cores and 5068 MB memory including 460 MB overhead
+17/04/23 21:22:26 INFO YarnAllocator: Canceled 0 container requests (locality no longer needed)
+17/04/23 21:22:26 INFO YarnAllocator: Submitted container request (host: *, capability: <memory:5068, vCores:4>)
+17/04/23 21:22:26 INFO ExecutorAllocationManager: Requesting 1 new executor because tasks are backlogged (new desired total will be 3)
+17/04/23 21:22:27 INFO AMRMClientImpl: Received new token for : ip-172-31-36-12.us-west-2.compute.internal:8041
+17/04/23 21:22:27 INFO YarnAllocator: Launching container container_1492982292298_0001_01_000007 for on host ip-172-31-38-189.us-west-2.compute.internal
+17/04/23 21:22:27 INFO YarnAllocator: Launching ExecutorRunnable. driverUrl: spark://CoarseGrainedScheduler@172.31.33.149:40055,  executorHostname: ip-172-31-38-189.us-west-2.compute.internal
+17/04/23 21:22:27 INFO YarnAllocator: Received 2 containers from YARN, launching executors on 1 of them.
+17/04/23 21:22:27 INFO ExecutorRunnable: Starting Executor Container
+17/04/23 21:22:27 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+17/04/23 21:22:27 INFO ExecutorRunnable: Setting up ContainerLaunchContext
+17/04/23 21:22:27 INFO ExecutorRunnable: 
+===============================================================================
+YARN executor launch context:
+  env:
+    CLASSPATH -> /usr/lib/hadoop-lzo/lib/*:/usr/lib/hadoop/hadoop-aws.jar:/usr/share/aws/aws-java-sdk/*:/usr/share/aws/emr/emrfs/conf:/usr/share/aws/emr/emrfs/lib/*:/usr/share/aws/emr/emrfs/auxlib/*:/usr/share/aws/emr/security/conf:/usr/share/aws/emr/security/lib/*<CPS>{{PWD}}<CPS>{{PWD}}/__spark_conf__<CPS>{{PWD}}/__spark_libs__/*<CPS>$HADOOP_CONF_DIR<CPS>$HADOOP_COMMON_HOME/*<CPS>$HADOOP_COMMON_HOME/lib/*<CPS>$HADOOP_HDFS_HOME/*<CPS>$HADOOP_HDFS_HOME/lib/*<CPS>$HADOOP_MAPRED_HOME/*<CPS>$HADOOP_MAPRED_HOME/lib/*<CPS>$HADOOP_YARN_HOME/*<CPS>$HADOOP_YARN_HOME/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-api-jdo.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-core.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-rdbms.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*
+    SPARK_LOG_URL_STDERR -> http://ip-172-31-38-189.us-west-2.compute.internal:8042/node/containerlogs/container_1492982292298_0001_01_000007/hadoop/stderr?start=-4096
+    SPARK_YARN_STAGING_DIR -> hdfs://ip-172-31-36-53.us-west-2.compute.internal:8020/user/hadoop/.sparkStaging/application_1492982292298_0001
+    SPARK_USER -> hadoop
+    SPARK_YARN_MODE -> true
+    SPARK_LOG_URL_STDOUT -> http://ip-172-31-38-189.us-west-2.compute.internal:8042/node/containerlogs/container_1492982292298_0001_01_000007/hadoop/stdout?start=-4096
+
+  command:
+    LD_LIBRARY_PATH="/usr/lib/hadoop/lib/native:/usr/lib/hadoop-lzo/lib/native:$LD_LIBRARY_PATH" {{JAVA_HOME}}/bin/java -server -Xmx4608m '-verbose:gc' '-XX:+PrintGCDetails' '-XX:+PrintGCDateStamps' '-XX:+UseConcMarkSweepGC' '-XX:CMSInitiatingOccupancyFraction=70' '-XX:MaxHeapFreeRatio=70' '-XX:+CMSClassUnloadingEnabled' '-XX:OnOutOfMemoryError=kill -9 %p' -Djava.io.tmpdir={{PWD}}/tmp '-Dspark.history.ui.port=18080' '-Dspark.ui.port=0' '-Dspark.driver.port=40055' -Dspark.yarn.app.container.log.dir=<LOG_DIR> org.apache.spark.executor.CoarseGrainedExecutorBackend --driver-url spark://CoarseGrainedScheduler@172.31.33.149:40055 --executor-id 3 --hostname ip-172-31-38-189.us-west-2.compute.internal --cores 4 --app-id application_1492982292298_0001 --user-class-path file:$PWD/__app__.jar 1> <LOG_DIR>/stdout 2> <LOG_DIR>/stderr
+===============================================================================
+      
+17/04/23 21:22:27 INFO ContainerManagementProtocolProxy: Opening proxy : ip-172-31-38-189.us-west-2.compute.internal:8041
+17/04/23 21:22:27 INFO YarnAllocator: Driver requested a total number of 5 executor(s).
+17/04/23 21:22:27 INFO YarnAllocator: Will request 2 executor containers, each with 4 cores and 5068 MB memory including 460 MB overhead
+17/04/23 21:22:27 INFO YarnAllocator: Canceled 0 container requests (locality no longer needed)
+17/04/23 21:22:27 INFO ExecutorAllocationManager: Requesting 2 new executors because tasks are backlogged (new desired total will be 5)
+17/04/23 21:22:27 INFO YarnAllocator: Submitted container request (host: *, capability: <memory:5068, vCores:4>)
+17/04/23 21:22:27 INFO YarnAllocator: Submitted container request (host: *, capability: <memory:5068, vCores:4>)
+17/04/23 21:22:28 INFO AMRMClientImpl: Received new token for : ip-172-31-44-95.us-west-2.compute.internal:8041
+17/04/23 21:22:28 INFO YarnAllocator: Launching container container_1492982292298_0001_01_000010 for on host ip-172-31-36-12.us-west-2.compute.internal
+17/04/23 21:22:28 INFO YarnAllocator: Launching ExecutorRunnable. driverUrl: spark://CoarseGrainedScheduler@172.31.33.149:40055,  executorHostname: ip-172-31-36-12.us-west-2.compute.internal
+17/04/23 21:22:28 INFO YarnAllocator: Launching container container_1492982292298_0001_01_000012 for on host ip-172-31-44-95.us-west-2.compute.internal
+17/04/23 21:22:28 INFO YarnAllocator: Launching ExecutorRunnable. driverUrl: spark://CoarseGrainedScheduler@172.31.33.149:40055,  executorHostname: ip-172-31-44-95.us-west-2.compute.internal
+17/04/23 21:22:28 INFO YarnAllocator: Received 2 containers from YARN, launching executors on 2 of them.
+17/04/23 21:22:28 INFO ExecutorRunnable: Starting Executor Container
+17/04/23 21:22:28 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+17/04/23 21:22:28 INFO ExecutorRunnable: Setting up ContainerLaunchContext
+17/04/23 21:22:28 INFO ExecutorRunnable: Starting Executor Container
+17/04/23 21:22:28 INFO ContainerManagementProtocolProxy: yarn.client.max-cached-nodemanagers-proxies : 0
+17/04/23 21:22:28 INFO ExecutorRunnable: Setting up ContainerLaunchContext
+17/04/23 21:22:28 INFO ExecutorRunnable: 
+===============================================================================
+YARN executor launch context:
+  env:
+    CLASSPATH -> /usr/lib/hadoop-lzo/lib/*:/usr/lib/hadoop/hadoop-aws.jar:/usr/share/aws/aws-java-sdk/*:/usr/share/aws/emr/emrfs/conf:/usr/share/aws/emr/emrfs/lib/*:/usr/share/aws/emr/emrfs/auxlib/*:/usr/share/aws/emr/security/conf:/usr/share/aws/emr/security/lib/*<CPS>{{PWD}}<CPS>{{PWD}}/__spark_conf__<CPS>{{PWD}}/__spark_libs__/*<CPS>$HADOOP_CONF_DIR<CPS>$HADOOP_COMMON_HOME/*<CPS>$HADOOP_COMMON_HOME/lib/*<CPS>$HADOOP_HDFS_HOME/*<CPS>$HADOOP_HDFS_HOME/lib/*<CPS>$HADOOP_MAPRED_HOME/*<CPS>$HADOOP_MAPRED_HOME/lib/*<CPS>$HADOOP_YARN_HOME/*<CPS>$HADOOP_YARN_HOME/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-api-jdo.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-core.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-rdbms.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*
+    SPARK_LOG_URL_STDERR -> http://ip-172-31-44-95.us-west-2.compute.internal:8042/node/containerlogs/container_1492982292298_0001_01_000012/hadoop/stderr?start=-4096
+    SPARK_YARN_STAGING_DIR -> hdfs://ip-172-31-36-53.us-west-2.compute.internal:8020/user/hadoop/.sparkStaging/application_1492982292298_0001
+    SPARK_USER -> hadoop
+    SPARK_YARN_MODE -> true
+    SPARK_LOG_URL_STDOUT -> http://ip-172-31-44-95.us-west-2.compute.internal:8042/node/containerlogs/container_1492982292298_0001_01_000012/hadoop/stdout?start=-4096
+
+  command:
+    LD_LIBRARY_PATH="/usr/lib/hadoop/lib/native:/usr/lib/hadoop-lzo/lib/native:$LD_LIBRARY_PATH" {{JAVA_HOME}}/bin/java -server -Xmx4608m '-verbose:gc' '-XX:+PrintGCDetails' '-XX:+PrintGCDateStamps' '-XX:+UseConcMarkSweepGC' '-XX:CMSInitiatingOccupancyFraction=70' '-XX:MaxHeapFreeRatio=70' '-XX:+CMSClassUnloadingEnabled' '-XX:OnOutOfMemoryError=kill -9 %p' -Djava.io.tmpdir={{PWD}}/tmp '-Dspark.history.ui.port=18080' '-Dspark.ui.port=0' '-Dspark.driver.port=40055' -Dspark.yarn.app.container.log.dir=<LOG_DIR> org.apache.spark.executor.CoarseGrainedExecutorBackend --driver-url spark://CoarseGrainedScheduler@172.31.33.149:40055 --executor-id 5 --hostname ip-172-31-44-95.us-west-2.compute.internal --cores 4 --app-id application_1492982292298_0001 --user-class-path file:$PWD/__app__.jar 1> <LOG_DIR>/stdout 2> <LOG_DIR>/stderr
+===============================================================================
+      
+17/04/23 21:22:28 INFO ContainerManagementProtocolProxy: Opening proxy : ip-172-31-44-95.us-west-2.compute.internal:8041
+17/04/23 21:22:28 INFO ExecutorRunnable: 
+===============================================================================
+YARN executor launch context:
+  env:
+    CLASSPATH -> /usr/lib/hadoop-lzo/lib/*:/usr/lib/hadoop/hadoop-aws.jar:/usr/share/aws/aws-java-sdk/*:/usr/share/aws/emr/emrfs/conf:/usr/share/aws/emr/emrfs/lib/*:/usr/share/aws/emr/emrfs/auxlib/*:/usr/share/aws/emr/security/conf:/usr/share/aws/emr/security/lib/*<CPS>{{PWD}}<CPS>{{PWD}}/__spark_conf__<CPS>{{PWD}}/__spark_libs__/*<CPS>$HADOOP_CONF_DIR<CPS>$HADOOP_COMMON_HOME/*<CPS>$HADOOP_COMMON_HOME/lib/*<CPS>$HADOOP_HDFS_HOME/*<CPS>$HADOOP_HDFS_HOME/lib/*<CPS>$HADOOP_MAPRED_HOME/*<CPS>$HADOOP_MAPRED_HOME/lib/*<CPS>$HADOOP_YARN_HOME/*<CPS>$HADOOP_YARN_HOME/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-api-jdo.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-core.jar<CPS>/usr/lib/spark/yarn/lib/datanucleus-rdbms.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/*<CPS>$HADOOP_MAPRED_HOME/share/hadoop/mapreduce/lib/*<CPS>/usr/lib/hadoop-lzo/lib/*<CPS>/usr/share/aws/emr/emrfs/conf<CPS>/usr/share/aws/emr/emrfs/lib/*<CPS>/usr/share/aws/emr/emrfs/auxlib/*<CPS>/usr/share/aws/emr/lib/*<CPS>/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar<CPS>/usr/share/aws/emr/cloudwatch-sink/lib/*
+    SPARK_LOG_URL_STDERR -> http://ip-172-31-36-12.us-west-2.compute.internal:8042/node/containerlogs/container_1492982292298_0001_01_000010/hadoop/stderr?start=-4096
+    SPARK_YARN_STAGING_DIR -> hdfs://ip-172-31-36-53.us-west-2.compute.internal:8020/user/hadoop/.sparkStaging/application_1492982292298_0001
+    SPARK_USER -> hadoop
+    SPARK_YARN_MODE -> true
+    SPARK_LOG_URL_STDOUT -> http://ip-172-31-36-12.us-west-2.compute.internal:8042/node/containerlogs/container_1492982292298_0001_01_000010/hadoop/stdout?start=-4096
+
+  command:
+    LD_LIBRARY_PATH="/usr/lib/hadoop/lib/native:/usr/lib/hadoop-lzo/lib/native:$LD_LIBRARY_PATH" {{JAVA_HOME}}/bin/java -server -Xmx4608m '-verbose:gc' '-XX:+PrintGCDetails' '-XX:+PrintGCDateStamps' '-XX:+UseConcMarkSweepGC' '-XX:CMSInitiatingOccupancyFraction=70' '-XX:MaxHeapFreeRatio=70' '-XX:+CMSClassUnloadingEnabled' '-XX:OnOutOfMemoryError=kill -9 %p' -Djava.io.tmpdir={{PWD}}/tmp '-Dspark.history.ui.port=18080' '-Dspark.ui.port=0' '-Dspark.driver.port=40055' -Dspark.yarn.app.container.log.dir=<LOG_DIR> org.apache.spark.executor.CoarseGrainedExecutorBackend --driver-url spark://CoarseGrainedScheduler@172.31.33.149:40055 --executor-id 4 --hostname ip-172-31-36-12.us-west-2.compute.internal --cores 4 --app-id application_1492982292298_0001 --user-class-path file:$PWD/__app__.jar 1> <LOG_DIR>/stdout 2> <LOG_DIR>/stderr
+===============================================================================
+      
+17/04/23 21:22:28 INFO ContainerManagementProtocolProxy: Opening proxy : ip-172-31-36-12.us-west-2.compute.internal:8041
+17/04/23 21:22:28 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 90.6 MB, free 333.5 MB)
+17/04/23 21:22:28 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 4.0 MB, free 329.5 MB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on 172.31.33.149:40008 (size: 4.0 MB, free: 420.4 MB)
+17/04/23 21:22:28 INFO MemoryStore: Block broadcast_7_piece1 stored as bytes in memory (estimated size 4.0 MB, free 325.5 MB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece1 in memory on 172.31.33.149:40008 (size: 4.0 MB, free: 416.4 MB)
+17/04/23 21:22:28 INFO MemoryStore: Block broadcast_7_piece2 stored as bytes in memory (estimated size 4.0 MB, free 321.5 MB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece2 in memory on 172.31.33.149:40008 (size: 4.0 MB, free: 412.4 MB)
+17/04/23 21:22:28 INFO MemoryStore: Block broadcast_7_piece3 stored as bytes in memory (estimated size 4.0 MB, free 317.5 MB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece3 in memory on 172.31.33.149:40008 (size: 4.0 MB, free: 408.4 MB)
+17/04/23 21:22:28 INFO MemoryStore: Block broadcast_7_piece4 stored as bytes in memory (estimated size 4.0 MB, free 313.5 MB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece4 in memory on 172.31.33.149:40008 (size: 4.0 MB, free: 404.4 MB)
+17/04/23 21:22:28 INFO MemoryStore: Block broadcast_7_piece5 stored as bytes in memory (estimated size 4.0 MB, free 309.5 MB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece5 in memory on 172.31.33.149:40008 (size: 4.0 MB, free: 400.4 MB)
+17/04/23 21:22:28 INFO MemoryStore: Block broadcast_7_piece6 stored as bytes in memory (estimated size 4.0 MB, free 305.5 MB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece6 in memory on 172.31.33.149:40008 (size: 4.0 MB, free: 396.4 MB)
+17/04/23 21:22:28 INFO MemoryStore: Block broadcast_7_piece7 stored as bytes in memory (estimated size 4.0 MB, free 301.5 MB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece7 in memory on 172.31.33.149:40008 (size: 4.0 MB, free: 392.4 MB)
+17/04/23 21:22:28 INFO MemoryStore: Block broadcast_7_piece8 stored as bytes in memory (estimated size 3.8 MB, free 297.7 MB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece8 in memory on 172.31.33.149:40008 (size: 3.8 MB, free: 388.6 MB)
+17/04/23 21:22:28 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1012
+17/04/23 21:22:28 INFO DAGScheduler: Submitting 18 missing tasks from ResultStage 4 (UnionRDD[19] at union at Prediction.scala:62)
+17/04/23 21:22:28 INFO YarnClusterScheduler: Adding task set 4.0 with 18 tasks
+17/04/23 21:22:28 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 10, ip-172-31-32-217.us-west-2.compute.internal, partition 0, PROCESS_LOCAL, 5485 bytes)
+17/04/23 21:22:28 INFO TaskSetManager: Starting task 1.0 in stage 4.0 (TID 11, ip-172-31-32-217.us-west-2.compute.internal, partition 1, PROCESS_LOCAL, 5485 bytes)
+17/04/23 21:22:28 INFO TaskSetManager: Starting task 2.0 in stage 4.0 (TID 12, ip-172-31-32-217.us-west-2.compute.internal, partition 2, PROCESS_LOCAL, 5485 bytes)
+17/04/23 21:22:28 INFO TaskSetManager: Starting task 3.0 in stage 4.0 (TID 13, ip-172-31-32-217.us-west-2.compute.internal, partition 3, PROCESS_LOCAL, 5529 bytes)
+17/04/23 21:22:28 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 10 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:22:28 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 11 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:22:28 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 12 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:22:28 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 13 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece8 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 3.8 MB, free: 2.5 GB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece6 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece5 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece4 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece3 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece2 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece7 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:28 INFO BlockManagerInfo: Added broadcast_7_piece1 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:31 INFO AMRMClientImpl: Received new token for : ip-172-31-42-0.us-west-2.compute.internal:8041
+17/04/23 21:22:31 INFO AMRMClientImpl: Received new token for : ip-172-31-35-214.us-west-2.compute.internal:8041
+17/04/23 21:22:31 INFO YarnAllocator: Received 2 containers from YARN, launching executors on 0 of them.
+17/04/23 21:22:32 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(null) (172.31.35.224:50576) with ID 2
+17/04/23 21:22:32 INFO TaskSetManager: Starting task 4.0 in stage 4.0 (TID 14, ip-172-31-35-224.us-west-2.compute.internal, partition 4, RACK_LOCAL, 5519 bytes)
+17/04/23 21:22:32 INFO TaskSetManager: Starting task 5.0 in stage 4.0 (TID 15, ip-172-31-35-224.us-west-2.compute.internal, partition 5, RACK_LOCAL, 5519 bytes)
+17/04/23 21:22:32 INFO TaskSetManager: Starting task 6.0 in stage 4.0 (TID 16, ip-172-31-35-224.us-west-2.compute.internal, partition 6, RACK_LOCAL, 5519 bytes)
+17/04/23 21:22:32 INFO TaskSetManager: Starting task 7.0 in stage 4.0 (TID 17, ip-172-31-35-224.us-west-2.compute.internal, partition 7, RACK_LOCAL, 5519 bytes)
+17/04/23 21:22:32 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 14 on executor id: 2 hostname: ip-172-31-35-224.us-west-2.compute.internal.
+17/04/23 21:22:32 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 15 on executor id: 2 hostname: ip-172-31-35-224.us-west-2.compute.internal.
+17/04/23 21:22:32 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 16 on executor id: 2 hostname: ip-172-31-35-224.us-west-2.compute.internal.
+17/04/23 21:22:32 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 17 on executor id: 2 hostname: ip-172-31-35-224.us-west-2.compute.internal.
+17/04/23 21:22:32 INFO ExecutorAllocationManager: New executor 2 has registered (new total is 2)
+17/04/23 21:22:32 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-35-224.us-west-2.compute.internal:37879 with 2.5 GB RAM, BlockManagerId(2, ip-172-31-35-224.us-west-2.compute.internal, 37879)
+17/04/23 21:22:32 INFO BlockManagerInfo: Added broadcast_7_piece8 in memory on ip-172-31-35-224.us-west-2.compute.internal:37879 (size: 3.8 MB, free: 2.5 GB)
+17/04/23 21:22:32 INFO BlockManagerInfo: Added broadcast_7_piece3 in memory on ip-172-31-35-224.us-west-2.compute.internal:37879 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:32 INFO BlockManagerInfo: Added broadcast_7_piece2 in memory on ip-172-31-35-224.us-west-2.compute.internal:37879 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:32 INFO BlockManagerInfo: Added broadcast_7_piece1 in memory on ip-172-31-35-224.us-west-2.compute.internal:37879 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:32 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on ip-172-31-35-224.us-west-2.compute.internal:37879 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:32 INFO BlockManagerInfo: Added broadcast_7_piece6 in memory on ip-172-31-35-224.us-west-2.compute.internal:37879 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:32 INFO BlockManagerInfo: Added broadcast_7_piece4 in memory on ip-172-31-35-224.us-west-2.compute.internal:37879 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:32 INFO BlockManagerInfo: Added broadcast_7_piece5 in memory on ip-172-31-35-224.us-west-2.compute.internal:37879 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:33 INFO BlockManagerInfo: Added broadcast_7_piece7 in memory on ip-172-31-35-224.us-west-2.compute.internal:37879 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:33 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(null) (172.31.44.95:39718) with ID 5
+17/04/23 21:22:33 INFO TaskSetManager: Starting task 8.0 in stage 4.0 (TID 18, ip-172-31-44-95.us-west-2.compute.internal, partition 8, RACK_LOCAL, 5519 bytes)
+17/04/23 21:22:33 INFO TaskSetManager: Starting task 9.0 in stage 4.0 (TID 19, ip-172-31-44-95.us-west-2.compute.internal, partition 9, RACK_LOCAL, 5519 bytes)
+17/04/23 21:22:33 INFO TaskSetManager: Starting task 10.0 in stage 4.0 (TID 20, ip-172-31-44-95.us-west-2.compute.internal, partition 10, RACK_LOCAL, 5519 bytes)
+17/04/23 21:22:33 INFO TaskSetManager: Starting task 11.0 in stage 4.0 (TID 21, ip-172-31-44-95.us-west-2.compute.internal, partition 11, RACK_LOCAL, 5519 bytes)
+17/04/23 21:22:33 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 18 on executor id: 5 hostname: ip-172-31-44-95.us-west-2.compute.internal.
+17/04/23 21:22:33 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 19 on executor id: 5 hostname: ip-172-31-44-95.us-west-2.compute.internal.
+17/04/23 21:22:33 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 20 on executor id: 5 hostname: ip-172-31-44-95.us-west-2.compute.internal.
+17/04/23 21:22:33 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 21 on executor id: 5 hostname: ip-172-31-44-95.us-west-2.compute.internal.
+17/04/23 21:22:33 INFO ExecutorAllocationManager: New executor 5 has registered (new total is 3)
+17/04/23 21:22:33 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-44-95.us-west-2.compute.internal:44334 with 2.5 GB RAM, BlockManagerId(5, ip-172-31-44-95.us-west-2.compute.internal, 44334)
+17/04/23 21:22:34 INFO BlockManagerInfo: Added broadcast_7_piece1 in memory on ip-172-31-44-95.us-west-2.compute.internal:44334 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:34 INFO BlockManagerInfo: Added broadcast_7_piece7 in memory on ip-172-31-44-95.us-west-2.compute.internal:44334 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:34 INFO BlockManagerInfo: Added broadcast_7_piece2 in memory on ip-172-31-44-95.us-west-2.compute.internal:44334 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:34 INFO BlockManagerInfo: Added broadcast_7_piece8 in memory on ip-172-31-44-95.us-west-2.compute.internal:44334 (size: 3.8 MB, free: 2.5 GB)
+17/04/23 21:22:34 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(null) (172.31.38.189:47324) with ID 3
+17/04/23 21:22:34 INFO TaskSetManager: Starting task 12.0 in stage 4.0 (TID 22, ip-172-31-38-189.us-west-2.compute.internal, partition 12, RACK_LOCAL, 5519 bytes)
+17/04/23 21:22:34 INFO TaskSetManager: Starting task 13.0 in stage 4.0 (TID 23, ip-172-31-38-189.us-west-2.compute.internal, partition 13, RACK_LOCAL, 5519 bytes)
+17/04/23 21:22:34 INFO TaskSetManager: Starting task 14.0 in stage 4.0 (TID 24, ip-172-31-38-189.us-west-2.compute.internal, partition 14, RACK_LOCAL, 5519 bytes)
+17/04/23 21:22:34 INFO TaskSetManager: Starting task 15.0 in stage 4.0 (TID 25, ip-172-31-38-189.us-west-2.compute.internal, partition 15, RACK_LOCAL, 5519 bytes)
+17/04/23 21:22:34 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 22 on executor id: 3 hostname: ip-172-31-38-189.us-west-2.compute.internal.
+17/04/23 21:22:34 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 23 on executor id: 3 hostname: ip-172-31-38-189.us-west-2.compute.internal.
+17/04/23 21:22:34 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 24 on executor id: 3 hostname: ip-172-31-38-189.us-west-2.compute.internal.
+17/04/23 21:22:34 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 25 on executor id: 3 hostname: ip-172-31-38-189.us-west-2.compute.internal.
+17/04/23 21:22:34 INFO ExecutorAllocationManager: New executor 3 has registered (new total is 4)
+17/04/23 21:22:34 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-38-189.us-west-2.compute.internal:36734 with 2.5 GB RAM, BlockManagerId(3, ip-172-31-38-189.us-west-2.compute.internal, 36734)
+17/04/23 21:22:35 INFO BlockManagerInfo: Added broadcast_7_piece5 in memory on ip-172-31-44-95.us-west-2.compute.internal:44334 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:35 INFO BlockManagerInfo: Added broadcast_7_piece6 in memory on ip-172-31-44-95.us-west-2.compute.internal:44334 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:35 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on ip-172-31-44-95.us-west-2.compute.internal:44334 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:35 INFO BlockManagerInfo: Added broadcast_7_piece4 in memory on ip-172-31-44-95.us-west-2.compute.internal:44334 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:35 INFO BlockManagerInfo: Added broadcast_7_piece7 in memory on ip-172-31-38-189.us-west-2.compute.internal:36734 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:35 INFO BlockManagerInfo: Added broadcast_7_piece3 in memory on ip-172-31-44-95.us-west-2.compute.internal:44334 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:35 INFO BlockManagerInfo: Added broadcast_7_piece1 in memory on ip-172-31-38-189.us-west-2.compute.internal:36734 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:35 INFO BlockManagerInfo: Added broadcast_7_piece3 in memory on ip-172-31-38-189.us-west-2.compute.internal:36734 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:35 INFO BlockManagerInfo: Added broadcast_7_piece2 in memory on ip-172-31-38-189.us-west-2.compute.internal:36734 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:35 INFO BlockManagerInfo: Added broadcast_7_piece4 in memory on ip-172-31-38-189.us-west-2.compute.internal:36734 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:35 INFO BlockManagerInfo: Added broadcast_7_piece5 in memory on ip-172-31-38-189.us-west-2.compute.internal:36734 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:35 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on ip-172-31-38-189.us-west-2.compute.internal:36734 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:35 INFO BlockManagerInfo: Added broadcast_7_piece6 in memory on ip-172-31-38-189.us-west-2.compute.internal:36734 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:36 INFO BlockManagerInfo: Added broadcast_7_piece8 in memory on ip-172-31-38-189.us-west-2.compute.internal:36734 (size: 3.8 MB, free: 2.5 GB)
+17/04/23 21:22:36 INFO YarnSchedulerBackend$YarnDriverEndpoint: Registered executor NettyRpcEndpointRef(null) (172.31.36.12:42700) with ID 4
+17/04/23 21:22:36 INFO TaskSetManager: Starting task 16.0 in stage 4.0 (TID 26, ip-172-31-36-12.us-west-2.compute.internal, partition 16, RACK_LOCAL, 5519 bytes)
+17/04/23 21:22:36 INFO TaskSetManager: Starting task 17.0 in stage 4.0 (TID 27, ip-172-31-36-12.us-west-2.compute.internal, partition 17, RACK_LOCAL, 5519 bytes)
+17/04/23 21:22:36 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 26 on executor id: 4 hostname: ip-172-31-36-12.us-west-2.compute.internal.
+17/04/23 21:22:36 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 27 on executor id: 4 hostname: ip-172-31-36-12.us-west-2.compute.internal.
+17/04/23 21:22:36 INFO ExecutorAllocationManager: New executor 4 has registered (new total is 5)
+17/04/23 21:22:36 INFO BlockManagerMasterEndpoint: Registering block manager ip-172-31-36-12.us-west-2.compute.internal:36166 with 2.5 GB RAM, BlockManagerId(4, ip-172-31-36-12.us-west-2.compute.internal, 36166)
+17/04/23 21:22:37 INFO BlockManagerInfo: Added broadcast_7_piece5 in memory on ip-172-31-36-12.us-west-2.compute.internal:36166 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:37 INFO BlockManagerInfo: Added broadcast_7_piece1 in memory on ip-172-31-36-12.us-west-2.compute.internal:36166 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:37 INFO BlockManagerInfo: Added broadcast_7_piece2 in memory on ip-172-31-36-12.us-west-2.compute.internal:36166 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:37 INFO BlockManagerInfo: Added broadcast_7_piece8 in memory on ip-172-31-36-12.us-west-2.compute.internal:36166 (size: 3.8 MB, free: 2.5 GB)
+17/04/23 21:22:37 INFO BlockManagerInfo: Added broadcast_7_piece4 in memory on ip-172-31-36-12.us-west-2.compute.internal:36166 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:38 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on ip-172-31-36-12.us-west-2.compute.internal:36166 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:38 INFO BlockManagerInfo: Added broadcast_7_piece3 in memory on ip-172-31-36-12.us-west-2.compute.internal:36166 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:38 INFO BlockManagerInfo: Added broadcast_7_piece7 in memory on ip-172-31-36-12.us-west-2.compute.internal:36166 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:38 INFO BlockManagerInfo: Added broadcast_7_piece6 in memory on ip-172-31-36-12.us-west-2.compute.internal:36166 (size: 4.0 MB, free: 2.5 GB)
+17/04/23 21:22:38 INFO TaskSetManager: Finished task 3.0 in stage 4.0 (TID 13) in 9930 ms on ip-172-31-32-217.us-west-2.compute.internal (1/18)
+17/04/23 21:22:38 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 10) in 10057 ms on ip-172-31-32-217.us-west-2.compute.internal (2/18)
+17/04/23 21:22:38 INFO YarnAllocator: Driver requested a total number of 4 executor(s).
+17/04/23 21:22:38 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 4 executors.
+17/04/23 21:22:38 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:38 INFO TaskSetManager: Finished task 2.0 in stage 4.0 (TID 12) in 10076 ms on ip-172-31-32-217.us-west-2.compute.internal (3/18)
+17/04/23 21:22:38 INFO TaskSetManager: Finished task 1.0 in stage 4.0 (TID 11) in 10089 ms on ip-172-31-32-217.us-west-2.compute.internal (4/18)
+17/04/23 21:22:41 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 4 executors.
+17/04/23 21:22:41 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:42 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-172-31-35-224.us-west-2.compute.internal:37879 (size: 26.0 KB, free: 2.5 GB)
+17/04/23 21:22:43 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-172-31-36-12.us-west-2.compute.internal:36166 (size: 26.0 KB, free: 2.5 GB)
+17/04/23 21:22:44 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 4 executors.
+17/04/23 21:22:44 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:45 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-172-31-44-95.us-west-2.compute.internal:44334 (size: 26.0 KB, free: 2.5 GB)
+17/04/23 21:22:46 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on ip-172-31-38-189.us-west-2.compute.internal:36734 (size: 26.0 KB, free: 2.5 GB)
+17/04/23 21:22:47 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 4 executors.
+17/04/23 21:22:47 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:50 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 4 executors.
+17/04/23 21:22:50 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:53 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 4 executors.
+17/04/23 21:22:53 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:53 INFO TaskSetManager: Finished task 17.0 in stage 4.0 (TID 27) in 17514 ms on ip-172-31-36-12.us-west-2.compute.internal (5/18)
+17/04/23 21:22:54 INFO TaskSetManager: Finished task 16.0 in stage 4.0 (TID 26) in 18297 ms on ip-172-31-36-12.us-west-2.compute.internal (6/18)
+17/04/23 21:22:54 INFO YarnAllocator: Driver requested a total number of 3 executor(s).
+17/04/23 21:22:54 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 3 executors.
+17/04/23 21:22:54 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:57 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 3 executors.
+17/04/23 21:22:57 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:22:59 INFO TaskSetManager: Finished task 5.0 in stage 4.0 (TID 15) in 27107 ms on ip-172-31-35-224.us-west-2.compute.internal (7/18)
+17/04/23 21:22:59 INFO TaskSetManager: Finished task 7.0 in stage 4.0 (TID 17) in 27110 ms on ip-172-31-35-224.us-west-2.compute.internal (8/18)
+17/04/23 21:22:59 INFO TaskSetManager: Finished task 4.0 in stage 4.0 (TID 14) in 27126 ms on ip-172-31-35-224.us-west-2.compute.internal (9/18)
+17/04/23 21:22:59 INFO TaskSetManager: Finished task 6.0 in stage 4.0 (TID 16) in 27329 ms on ip-172-31-35-224.us-west-2.compute.internal (10/18)
+17/04/23 21:22:59 INFO YarnAllocator: Driver requested a total number of 2 executor(s).
+17/04/23 21:22:59 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 2 executors.
+17/04/23 21:22:59 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:23:01 INFO TaskSetManager: Finished task 9.0 in stage 4.0 (TID 19) in 28039 ms on ip-172-31-44-95.us-west-2.compute.internal (11/18)
+17/04/23 21:23:01 INFO TaskSetManager: Finished task 10.0 in stage 4.0 (TID 20) in 28061 ms on ip-172-31-44-95.us-west-2.compute.internal (12/18)
+17/04/23 21:23:02 INFO TaskSetManager: Finished task 8.0 in stage 4.0 (TID 18) in 28279 ms on ip-172-31-44-95.us-west-2.compute.internal (13/18)
+17/04/23 21:23:02 INFO TaskSetManager: Finished task 11.0 in stage 4.0 (TID 21) in 28469 ms on ip-172-31-44-95.us-west-2.compute.internal (14/18)
+17/04/23 21:23:02 INFO YarnAllocator: Driver requested a total number of 1 executor(s).
+17/04/23 21:23:02 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 1 executors.
+17/04/23 21:23:02 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:23:03 INFO TaskSetManager: Finished task 14.0 in stage 4.0 (TID 24) in 29342 ms on ip-172-31-38-189.us-west-2.compute.internal (15/18)
+17/04/23 21:23:04 INFO TaskSetManager: Finished task 12.0 in stage 4.0 (TID 22) in 29439 ms on ip-172-31-38-189.us-west-2.compute.internal (16/18)
+17/04/23 21:23:04 INFO TaskSetManager: Finished task 13.0 in stage 4.0 (TID 23) in 29589 ms on ip-172-31-38-189.us-west-2.compute.internal (17/18)
+17/04/23 21:23:04 INFO TaskSetManager: Finished task 15.0 in stage 4.0 (TID 25) in 29590 ms on ip-172-31-38-189.us-west-2.compute.internal (18/18)
+17/04/23 21:23:04 INFO YarnClusterScheduler: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+17/04/23 21:23:04 INFO DAGScheduler: ResultStage 4 (collect at Prediction.scala:62) finished in 35.637 s
+17/04/23 21:23:04 INFO DAGScheduler: Job 3 finished: collect at Prediction.scala:62, took 39.501871 s
+17/04/23 21:23:04 INFO YarnAllocator: Driver requested a total number of 0 executor(s).
+17/04/23 21:23:04 INFO YarnAllocator: Canceling requests for 0 executor container(s) to have a new desired total 0 executors.
+17/04/23 21:23:04 WARN YarnAllocator: Expected to find pending requests, but found none.
+17/04/23 21:23:04 INFO deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+17/04/23 21:23:04 INFO deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+17/04/23 21:23:04 INFO deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+17/04/23 21:23:04 INFO deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+17/04/23 21:23:04 INFO deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+17/04/23 21:23:04 INFO DirectFileOutputCommitter: Nothing to setup since the outputs are written directly.
+17/04/23 21:23:04 INFO SparkContext: Starting job: saveAsTextFile at Prediction.scala:62
+17/04/23 21:23:04 INFO DAGScheduler: Got job 4 (saveAsTextFile at Prediction.scala:62) with 1 output partitions
+17/04/23 21:23:04 INFO DAGScheduler: Final stage: ResultStage 5 (saveAsTextFile at Prediction.scala:62)
+17/04/23 21:23:04 INFO DAGScheduler: Parents of final stage: List()
+17/04/23 21:23:04 INFO DAGScheduler: Missing parents: List()
+17/04/23 21:23:04 INFO DAGScheduler: Submitting ResultStage 5 (MapPartitionsRDD[21] at saveAsTextFile at Prediction.scala:62), which has no missing parents
+17/04/23 21:23:04 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 76.3 KB, free 297.6 MB)
+17/04/23 21:23:04 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 28.3 KB, free 297.6 MB)
+17/04/23 21:23:04 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on 172.31.33.149:40008 (size: 28.3 KB, free: 388.6 MB)
+17/04/23 21:23:04 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1012
+17/04/23 21:23:04 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 5 (MapPartitionsRDD[21] at saveAsTextFile at Prediction.scala:62)
+17/04/23 21:23:04 INFO YarnClusterScheduler: Adding task set 5.0 with 1 tasks
+17/04/23 21:23:04 WARN TaskSetManager: Stage 5 contains a task of very large size (2966 KB). The maximum recommended task size is 100 KB.
+17/04/23 21:23:04 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 28, ip-172-31-32-217.us-west-2.compute.internal, partition 0, PROCESS_LOCAL, 3037443 bytes)
+17/04/23 21:23:04 INFO YarnSchedulerBackend$YarnDriverEndpoint: Launching task 28 on executor id: 1 hostname: ip-172-31-32-217.us-west-2.compute.internal.
+17/04/23 21:23:04 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on ip-172-31-32-217.us-west-2.compute.internal:39257 (size: 28.3 KB, free: 2.5 GB)
+17/04/23 21:23:05 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 28) in 964 ms on ip-172-31-32-217.us-west-2.compute.internal (1/1)
+17/04/23 21:23:05 INFO YarnClusterScheduler: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+17/04/23 21:23:05 INFO DAGScheduler: ResultStage 5 (saveAsTextFile at Prediction.scala:62) finished in 0.957 s
+17/04/23 21:23:05 INFO DAGScheduler: Job 4 finished: saveAsTextFile at Prediction.scala:62, took 0.985933 s
+17/04/23 21:23:05 INFO FileOutputCommitter: File Output Committer Algorithm version is 1
+17/04/23 21:23:05 INFO DirectFileOutputCommitter: Nothing to clean up since no temporary files were written.
+17/04/23 21:23:05 INFO MultipartUploadOutputStream: close closed:false s3://cs6240biya/output/_SUCCESS
+17/04/23 21:23:05 INFO ApplicationMaster: Final app status: SUCCEEDED, exitCode: 0
+17/04/23 21:23:05 INFO SparkContext: Invoking stop() from shutdown hook
+17/04/23 21:23:05 INFO SparkUI: Stopped Spark web UI at http://172.31.33.149:37106
+17/04/23 21:23:05 INFO YarnClusterSchedulerBackend: Shutting down all executors
+17/04/23 21:23:05 INFO YarnSchedulerBackend$YarnDriverEndpoint: Asking each executor to shut down
+17/04/23 21:23:05 INFO SchedulerExtensionServices: Stopping SchedulerExtensionServices
+(serviceOption=None,
+ services=List(),
+ started=false)
+17/04/23 21:23:05 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+17/04/23 21:23:05 INFO MemoryStore: MemoryStore cleared
+17/04/23 21:23:05 INFO BlockManager: BlockManager stopped
+17/04/23 21:23:05 INFO BlockManagerMaster: BlockManagerMaster stopped
+17/04/23 21:23:05 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+17/04/23 21:23:05 INFO SparkContext: Successfully stopped SparkContext
+17/04/23 21:23:05 INFO ApplicationMaster: Unregistering ApplicationMaster with SUCCEEDED
+17/04/23 21:23:05 INFO AMRMClientImpl: Waiting for application to be successfully unregistered.
+17/04/23 21:23:05 INFO ApplicationMaster: Deleting staging directory hdfs://ip-172-31-36-53.us-west-2.compute.internal:8020/user/hadoop/.sparkStaging/application_1492982292298_0001
+17/04/23 21:23:05 INFO ShutdownHookManager: Shutdown hook called
+17/04/23 21:23:05 INFO ShutdownHookManager: Deleting directory /mnt/yarn/usercache/hadoop/appcache/application_1492982292298_0001/spark-3e846781-4953-40ee-97df-f64591443e53
